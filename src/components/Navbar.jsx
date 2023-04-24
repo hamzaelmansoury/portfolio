@@ -27,13 +27,13 @@ function Navbar() {
                 <p className="text-4xl mb-3 cursor-default">🐐</p>
                 <ul className="flex font-bold lg:gap-20 gap-8 text-gray-600">
                     <li>
-                        <a href="/#profile" className="hover:text-purple-500">Profile</a>
+                        <a href="#profile" className="hover:text-purple-500">Profile</a>
                     </li>
                     <li>
-                        <a href="/#about" className="hover:text-purple-500">About</a>
+                        <a href="#about" className="hover:text-purple-500">About</a>
                     </li>
                     <li>
-                        <a href="/#portfolio" className="hover:text-purple-500">Portfolio</a>
+                        <a href="#portfolio" className="hover:text-purple-500">Portfolio</a>
                     </li>
                 </ul>
                 <button onClick={() => setShow(true)} className="px-3 p-2 rounded text-white italic hover:bg-purple-400 bg-purple-500">Contact me</button>
