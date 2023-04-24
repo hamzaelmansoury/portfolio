@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    width: .8em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #333;
+    outline: 1px solid #333;
+}
+
+.hand {
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+.sircle {
+    animation-name: water;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    animation-timing-function: ease-in-out;
+    display: inline-block;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+@keyframes water {
+    0% {
+        border-radius: 48% 52% 50% 50% / 52% 52% 48% 48%;
+    }
+
+    25% {
+        border-radius: 48% 52% 35% 65% / 52% 40% 60% 48%;
+    }
+
+    75% {
+        border-radius: 59% 41% 53% 47% / 56% 52% 48% 44%;
+    }
+
+    100% {
+        border-radius: 48% 52% 50% 50% / 52% 52% 48% 48%;
+    }
+}
